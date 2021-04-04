@@ -23,7 +23,6 @@ public class FixedDepositService {
 
     }
 
-
     public List<FixedDeposit> findAll()
     {
         return fixedDepositList;
