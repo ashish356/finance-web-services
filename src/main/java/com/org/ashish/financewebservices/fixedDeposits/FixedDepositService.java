@@ -33,7 +33,7 @@ public class FixedDepositService {
     {
         if(fixedDeposit.getId()==-1|| fixedDeposit.getId()==0)
         {
-            fixedDeposit.setId((long) ++idCounter);
+            fixedDeposit.setId(++idCounter);
         }else
         {
             deleteById(fixedDeposit.getId());

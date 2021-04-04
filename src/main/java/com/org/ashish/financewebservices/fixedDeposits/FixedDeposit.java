@@ -6,15 +6,13 @@ import javax.persistence.Id;
 import java.util.Date;
 import java.util.Objects;
 
-@Entity
+
 public class FixedDeposit {
 
-    @Id
-    @GeneratedValue
-    private Long id;
+    private long id;
     private String bankName;
-    private Integer depositAmount;
-    private Integer maturityAmount;
+    private int depositAmount;
+    private int maturityAmount;
     private Date maturityDate;
 
     protected FixedDeposit()
@@ -34,7 +32,7 @@ public class FixedDeposit {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -50,7 +48,7 @@ public class FixedDeposit {
         return depositAmount;
     }
 
-    public void setDepositAmount(Integer depositAmount) {
+    public void setDepositAmount(int depositAmount) {
         this.depositAmount = depositAmount;
     }
 
@@ -58,7 +56,7 @@ public class FixedDeposit {
         return maturityAmount;
     }
 
-    public void setMaturityAmount(Integer maturityAmount) {
+    public void setMaturityAmount(int maturityAmount) {
         this.maturityAmount = maturityAmount;
     }
 
